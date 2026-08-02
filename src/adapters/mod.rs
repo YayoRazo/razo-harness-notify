@@ -43,7 +43,7 @@ pub fn backup_before_write(path: &Path) -> std::io::Result<()> {
 /// Write content to a temp sibling file, then atomically rename it over the
 /// target. This closes the TOCTOU window between reading and writing: another
 /// process (e.g. the harness itself) writing the same config between our read
-/// and our write cannot cause silent data loss — the worst case is one writer
+/// and our write cannot cause silent data loss - the worst case is one writer
 /// wins, but the file is never left in a partially-written or empty state.
 pub fn atomic_write(path: &Path, content: &str) -> Result<(), String> {
     if let Some(parent) = path.parent() {

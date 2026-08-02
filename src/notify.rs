@@ -131,7 +131,7 @@ pub struct NotifyContext<'a> {
 fn sanitize(s: &str) -> &str {
     // Strip ASCII control characters (below 0x20, except tab and newline
     // which are harmless in plain-text notification bodies) and reject any
-    // string containing angle brackets — desktop notification bodies are
+    // string containing angle brackets - desktop notification bodies are
     // plain text, and some Linux daemons (dunst with markup=yes) render a
     // subset of HTML, so brackets could be interpreted as markup.
     if s.chars().any(|c| c == '<' || c == '>' || (c as u32) < 0x20 && c != '\t' && c != '\n') {

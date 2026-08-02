@@ -90,7 +90,7 @@ mod linux {
     /// all (org.freedesktop.Notifications). Returns `Some(true)` when a
     /// daemon answered, `Some(false)` when the well-known name has no owner
     /// (no daemon running), and `None` when the D-Bus session itself is
-    /// unreachable (permission error, bus not running, etc.) — in that
+    /// unreachable (permission error, bus not running, etc.) - in that
     /// last case the daemon *might* still be reachable through another
     /// transport path, so do not warn.
     pub fn daemon_status() -> Option<bool> {

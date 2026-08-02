@@ -131,7 +131,7 @@ stderr and exit non-zero.
 | `events.attention` | `true`/`false` | notify when input/a decision is needed (default `true`) |
 | `events.subagent_done` | `true`/`false` | notify when a subagent finishes (default `false`) |
 | `session.include_name` | `true`/`false` | include which window sent the notification (default `false`) |
-| `session.format` | `name` or `path` | how the session is labeled, if included (default `name`). `path` shows the full project directory — be aware this leaks local paths into notification previews on screen. |
+| `session.format` | `name` or `path` | how the session is labeled, if included (default `name`). `path` shows the full project directory - be aware this leaks local paths into notification previews on screen. |
 | `sound.enabled` | `true`/`false` | play a sound with the notification (default `true`) |
 | `dnd.enabled` | `true`/`false` | enable quiet hours (default `false`) |
 | `dnd.start` | `HH:MM` | quiet hours start, local time (default `22:00`) |
